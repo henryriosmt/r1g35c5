@@ -38,9 +38,10 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/chah1"
+                android:id="@+id/chaqueta1"
                 android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
                 app:srcCompat="@drawable/chah1" />
 
             <TextView
@@ -68,7 +69,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/cham1"
+                android:id="@+id/chaqueta2"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/cham1" />
@@ -98,9 +99,9 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/cham2"
+                android:id="@+id/chaqueta3"
                 android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_height="match_parent"
                 app:srcCompat="@drawable/cham2" />
 
             <TextView

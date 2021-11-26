@@ -10,11 +10,17 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /**
+     * método para mostrar esta actividad en pantalla, con todos los elmentos incluidos en ella
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,8 +32,45 @@ public class MainActivity extends AppCompatActivity {
         ImageView imagenini = (ImageView) findViewById(R.id.imagenini);
         imagenini.setImageDrawable(drawable);
 
+        Button botonProductos = (Button) findViewById(R.id.botonProductos);
+        botonProductos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent pantallaProductos = new Intent(getApplicationContext(), MainActivity2.class);
+                startActivity(pantallaProductos);
+
+            }
+        });
+
+        Button botonServicios = (Button) findViewById(R.id.botonServicios);
+        botonServicios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent pantallaServicios = new Intent(getApplicationContext(), MainActivity3.class);
+                startActivity(pantallaServicios);
+
+            }
+        });
+
+        Button botonSucursales = (Button) findViewById(R.id.botonSucursales);
+        botonSucursales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                Intent pantallaSucursales = new Intent(getApplicationContext(), MainActivity4.class);
+                startActivity(pantallaSucursales);
+
+            }
+        });
+
+
+
     }
 
+    /**
+     * Método para mostrar un menú con opciones de la barra de tareas
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -35,6 +78,11 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    /**
+     * método del listener para escuchar qué botones se presionan y así ejecutar una acción.
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 

@@ -38,7 +38,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/chah1"
+                android:id="@+id/servicio1"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 app:srcCompat="@drawable/bogota" />
@@ -151,7 +151,7 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/cham1"
+                android:id="@+id/servicio2"
                 android:layout_width="140dp"
                 android:layout_height="match_parent"
                 app:srcCompat="@drawable/cali" />
